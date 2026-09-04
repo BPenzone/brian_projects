@@ -1,3 +1,16 @@
+const headingStyle = document.createElement('style');
+headingStyle.textContent = `
+  h1, h2, h3,
+  .brand-copy,
+  .hero-panel strong,
+  .timeline-item strong,
+  .principles strong {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+  }
+`;
+document.head.appendChild(headingStyle);
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
