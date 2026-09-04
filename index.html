@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brian's automation, AI, training, and process improvement project portfolio." />
+  <title>Brian Penzone | Project Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">BP</span>
+        <span class="brand-copy">Brian Penzone <small>Automation + AI Portfolio</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#impact">Impact</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#approach">Approach</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Practical AI. Useful automation. Real results.</div>
+          <h1>Building tools that turn repetitive work into <em>recovered capacity.</em></h1>
+          <p class="hero-lede">A growing portfolio of automation, AI, training, and process-improvement projects designed around real workflows, real users, and measurable operational value.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore projects</a>
+            <a class="btn btn-ghost" href="#impact">See the impact</a>
+          </div>
+        </div>
+        <div class="hero-panel reveal" aria-label="Portfolio summary">
+          <div class="pulse-ring"></div>
+          <div class="hero-panel-inner">
+            <span class="panel-kicker">CURRENT FOCUS</span>
+            <strong>Automation that helps people move faster without removing judgment.</strong>
+            <p>From purchase orders and quotes to training, purchasing reconciliation, inventory decisions, and press capability.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="metrics section-pad reveal">
+        <div class="metric-card"><span class="metric-value" data-count="7162">0</span><span class="metric-label">Purchase orders processed</span></div>
+        <div class="metric-card"><span class="metric-value" data-count="55693">0</span><span class="metric-label">Line items assisted</span></div>
+        <div class="metric-card"><span class="metric-value" data-count="477">0</span><span class="metric-label">Hours of processing time recovered</span></div>
+        <div class="metric-card"><span class="metric-value metric-money" data-count="50000">$0</span><span class="metric-label">Estimated productivity impact</span></div>
+      </section>
+
+      <section id="projects" class="section-pad">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">PROJECT PORTFOLIO</span><h2>Built around the work.</h2></div>
+          <p>Each project starts with a practical problem: too many clicks, too much interpretation, too much repetition, or too little visibility.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured reveal" data-project="orderpath">
+            <div class="project-topline"><span class="status live">LIVE</span><span>Customer Service Automation</span></div>
+            <h3><span>ORDER</span>PATH</h3>
+            <p>Transforms emailed customer purchase orders into structured, validated Excel output ready to support SAP order entry.</p>
+            <div class="project-stats"><strong>55K+</strong><span>line items processed</span><strong>4</strong><span>U.S. branches live</span></div>
+            <div class="tags"><span>Power Automate</span><span>AI Builder</span><span>Office Scripts</span><span>Power BI</span></div>
+            <button class="project-toggle" type="button" aria-expanded="false">View project details <span>+</span></button>
+            <div class="project-detail">
+              <div><strong>The problem</strong><p>Customer purchase orders arrive in many formats and require repetitive interpretation, data extraction, SKU checks, and preparation before SAP entry.</p></div>
+              <div><strong>The solution</strong><p>ORDERPATH combines OCR, AI extraction, validation logic, SKU matching, customer lookup, and Excel automation into a human-in-the-loop workflow.</p></div>
+              <div class="flow"><span>Email</span><i>→</i><span>OCR</span><i>→</i><span>AI</span><i>→</i><span>Validation</span><i>→</i><span>Excel</span><i>→</i><span>SAP</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-project="quotepath">
+            <div class="project-topline"><span class="status pilot">PILOT</span><span>Quote Automation</span></div>
+            <h3><span>QUOTE</span>PATH</h3>
+            <p>Turns quote requests from emails, PDFs, screenshots, and images into clean, validated quote-ready line items.</p>
+            <div class="tags"><span>OCR</span><span>AI Extraction</span><span>SKU Validation</span><span>Excel</span></div>
+            <button class="project-toggle" type="button" aria-expanded="false">View project details <span>+</span></button>
+            <div class="project-detail"><div><strong>Designed for messy inputs</strong><p>QUOTEPATH is built to interpret attachments, body text, screenshots, photographed lists, and other unstructured quote requests while keeping a review step in the process.</p></div></div>
+          </article>
+
+          <article class="project-card reveal" data-project="purchasepath">
+            <div class="project-topline"><span class="status build">BUILD</span><span>Purchasing Reconciliation</span></div>
+            <h3><span>PURCHASE</span>PATH</h3>
+            <p>Compares SAP purchasing data with supplier reports, normalizes identifiers, and surfaces weight and quantity variances.</p>
+            <div class="tags"><span>Power Automate</span><span>Office Scripts</span><span>Reconciliation</span></div>
+            <button class="project-toggle" type="button" aria-expanded="false">View project details <span>+</span></button>
+            <div class="project-detail"><div><strong>Less spreadsheet detective work</strong><p>The workflow pairs SAP and vendor files, standardizes tag formats, joins matching records, calculates variances, and prepares a consistent output for review.</p></div></div>
+          </article>
+
+          <article class="project-card reveal" data-project="presspath">
+            <div class="project-topline"><span class="status discovery">DISCOVERY</span><span>Manufacturing Intelligence</span></div>
+            <h3><span>PRESS</span>PATH</h3>
+            <p>Determines which press and feedline combinations can run a part based on die, material, tonnage, dimensions, and equipment limits.</p>
+            <div class="tags"><span>Decision Logic</span><span>Manufacturing</span><span>Power Apps</span><span>Power BI</span></div>
+            <button class="project-toggle" type="button" aria-expanded="false">View project details <span>+</span></button>
+            <div class="project-detail"><div><strong>Capability instead of tribal knowledge</strong><p>PRESSPATH is being designed to turn complex press-selection logic into a repeatable decision system that can explain why a press line is or is not capable of running a given job.</p></div></div>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-topline"><span class="status live">ACTIVE</span><span>Training</span></div>
+            <h3><span>CALL</span>PATH</h3>
+            <p>AI-powered customer call simulations that let Inside Sales reps practice realistic conversations in a safe training environment.</p>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-topline"><span class="status build">RULES</span><span>Inventory</span></div>
+            <h3><span>STOCK</span>PATH</h3>
+            <p>Automates stocking recommendations using business rules, supplier logic, material types, and consumption history.</p>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-topline"><span class="status discovery">CONCEPT</span><span>Pricing</span></div>
+            <h3><span>PRICE</span>PATH</h3>
+            <p>Reserved for simplifying and standardizing pricing workflows where repetitive lookup and interpretation create friction.</p>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-topline"><span class="status discovery">CONCEPT</span><span>Operations</span></div>
+            <h3><span>MAINTENANCE</span>PATH</h3>
+            <p>Explores structured automation for daily maintenance pass-downs and cleaner communication between shifts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="timeline-section section-pad">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">2026 TIMELINE</span><h2>From one workflow to a portfolio.</h2></div>
+          <p>The projects build on one another: prove value, learn what works, then apply the same thinking to the next operational problem.</p>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item"><span>JUNE</span><strong>ORDERPATH launches</strong><p>Initial rollout begins in Columbus and quickly expands.</p></div>
+          <div class="timeline-item"><span>JULY</span><strong>Multi-branch adoption</strong><p>ORDERPATH expands to additional U.S. branches and begins demonstrating measurable capacity gains.</p></div>
+          <div class="timeline-item"><span>AUGUST</span><strong>Portfolio expands</strong><p>ORDERPATH reaches all U.S. branches while QUOTEPATH, PURCHASEPATH, CALLPATH, and PRESSPATH accelerate.</p></div>
+          <div class="timeline-item active"><span>NEXT</span><strong>Scale what works</strong><p>Refine the systems, improve measurement, expand useful automation, and keep humans in control of judgment-heavy work.</p></div>
+        </div>
+      </section>
+
+      <section id="approach" class="approach section-pad reveal">
+        <div class="approach-copy">
+          <span class="section-kicker">THE APPROACH</span>
+          <h2>Built for people, not AI demos.</h2>
+          <p>The goal is not automation for its own sake. The goal is to remove repetitive friction, make complicated work easier to execute, preserve human judgment where it matters, and create capacity that teams can use on higher-value work.</p>
+        </div>
+        <div class="principles">
+          <div><span>01</span><strong>Start with the workflow</strong><p>Understand what people actually do before trying to automate it.</p></div>
+          <div><span>02</span><strong>Keep humans in the loop</strong><p>Use AI to assist interpretation while keeping review and judgment where they belong.</p></div>
+          <div><span>03</span><strong>Measure what matters</strong><p>Track usage, capacity, quality, and operational impact instead of novelty.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Brian Penzone · Automation + AI Project Portfolio</span>
+      <span>Built to evolve.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
