@@ -37,12 +37,13 @@ const animateMetric = (el) => {
   const duration = 1200;
   const start = performance.now();
   const isMoney = el.classList.contains('metric-money');
+  const showPlus = el.dataset.plus === 'true' || (!isMoney && target >= 1000);
 
   const frame = (now) => {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     const current = Math.floor(target * eased);
-    el.textContent = `${isMoney ? '$' : ''}${formatNumber(current)}${progress === 1 && !isMoney && target >= 1000 ? '+' : ''}`;
+    el.textContent = `${isMoney ? '$' : ''}${formatNumber(current)}${progress === 1 && showPlus ? '+' : ''}`;
 
     if (progress < 1) requestAnimationFrame(frame);
   };
