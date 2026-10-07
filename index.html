@@ -102,17 +102,25 @@
           <article class="project-card reveal" data-project="purchasepath-recon">
             <div class="project-topline"><span class="status live">LIVE</span><span>Purchasing Reconciliation</span></div>
             <h3><span>PURCHASE</span>PATH: Recon</h3>
-            <p>Compares SAP purchasing data with supplier reports, normalizes identifiers, and surfaces weight and quantity variances.</p>
-            <div class="tags"><span>Power Automate</span><span>Office Scripts</span><span>Reconciliation</span></div>
+            <p>Automates end-of-month purchasing reconciliation by comparing SAP data with supplier reports, normalizing identifiers, matching records, and surfacing weight and quantity variances for review.</p>
+            <div class="tags"><span>Power Automate</span><span>Office Scripts</span><span>Reconciliation</span><span>Month-End</span></div>
             <button class="project-toggle" type="button" aria-expanded="false">View project details <span>+</span></button>
-            <div class="project-detail"><div><strong>Less spreadsheet detective work</strong><p>The workflow pairs SAP and vendor files, standardizes tag formats, joins matching records, calculates variances, and prepares a consistent output for review.</p></div></div>
+            <div class="project-detail">
+              <div><strong>End-of-month reconciliation</strong><p>At month end, Purchasing receives multiple vendor reports that have to be compared against SAP. PURCHASEPATH: Recon ingests both sources, standardizes tag and identifier formats, joins matching records, calculates variances, and produces a consistent review file.</p></div>
+              <div><strong>Replacing days of manual comparison</strong><p>The workflow removes much of the spreadsheet-by-spreadsheet detective work from a recurring close process, turning a task that could consume roughly two days each month into an automated comparison and exception-review workflow.</p></div>
+            </div>
           </article>
 
           <article class="project-card reveal" data-project="purchasepath-mcc">
             <div class="project-topline"><span class="status live">LIVE</span><span>Master Coil Consumption</span></div>
             <h3><span>PURCHASE</span>PATH: MCC</h3>
-            <p>A PURCHASEPATH module that automates master coil consumption report processing for Purchasing.</p>
-            <div class="tags"><span>Power Automate</span><span>AI Builder</span><span>Office Scripts</span><span>Purchasing</span></div>
+            <p>Automates the daily processing of master coil consumption reports, extracting the purchasing data needed for roughly 10–20 master coil calculations each day.</p>
+            <div class="tags"><span>Power Automate</span><span>AI Builder</span><span>Office Scripts</span><span>Daily Operations</span></div>
+            <button class="project-toggle" type="button" aria-expanded="false">View project details <span>+</span></button>
+            <div class="project-detail">
+              <div><strong>Built for daily purchasing work</strong><p>Purchasing processes approximately 10–20 master coil calculations on a typical day. PURCHASEPATH: MCC reads the source reports, extracts key fields such as PO, master coil weight, mill or tag information, slit widths, and slit weights, then structures the data for the calculation workflow.</p></div>
+              <div><strong>From manual report reading to seconds</strong><p>Work that previously required opening reports, finding values, and manually entering data is reduced to a repeatable automated process. A report that could take around 30 minutes to work through can be processed in seconds, freeing Purchasing to focus on the exceptions and decisions that actually need attention.</p></div>
+            </div>
           </article>
 
           <article class="project-card reveal" data-project="presspath">
